@@ -11,7 +11,12 @@ int main() {
     printf("Ingrese el segundo número: ");
     scanf("%lf", &num2);
 
-    
+     if (operador == '+') {
+        resultado = num1 + num2;
+    } else if (operador == '-') {
+        resultado = num1 - num2;
+    }
 
     return 0;
 }
+
