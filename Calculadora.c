@@ -24,6 +24,12 @@ int main() {
             printf("Error: No se puede dividir por cero.\n");
             return 1;
         }
+     } else {
+        printf("Error: Operador no válido.\n");
+        return 1; // Terminar el programa con un código de error
+    }
+
+    printf("El resultado de %.2lf %c %.2lf es %.2lf\n", num1, operador, num2, resultado);
 
     return 0;
 }
