@@ -15,7 +15,15 @@ int main() {
         resultado = num1 + num2;
     } else if (operador == '-') {
         resultado = num1 - num2;
-    }
+    }else if (operador == '*') {
+        resultado = num1 * num2;
+    } else if (operador == '/') {
+        if (num2 != 0) {
+            resultado = num1 / num2;
+        } else {
+            printf("Error: No se puede dividir por cero.\n");
+            return 1;
+        }
 
     return 0;
 }
